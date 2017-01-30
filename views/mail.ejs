@@ -15,9 +15,9 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <label class="control-label col-sm-2" >Subject:</label>
       <div class="col-sm-4">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        <input type="text" class="form-control" id="subject" placeholder="Enter email subject">
       </div>
     </div>
 
@@ -45,8 +45,8 @@
             e.preventDefault();
              var data ={
              	email : $('#email').val(),
-             	password : $('#password').val(),
-             	comment : $('comment').val()
+             	subject : $('#subject').val(),
+             	comment : $('#comment').val()
 
              };
                
