@@ -12,7 +12,7 @@ router.post('/mailsender', function (req, res) {
     // Not the movie transporter!
      var mail = req.body.email;
      console.log(mail);
-     var pass = req.body.subject;
+     var sub = req.body.subject;
      console.log(pass);
      var comment = req.body.comment;
      console.log(comment);
@@ -27,7 +27,7 @@ router.post('/mailsender', function (req, res) {
 	var mailOptions = {
 	    from: 'gorai.ranjit13@gmail.com', // sender address
 	    to: mail, // list of receivers
-	    subject: pass, // Subject line
+	    subject: sub, // Subject line
 	    text:comment, //, // plaintext body
 	    // html: '<b>Hello world ✔</b>' // You can choose to send an HTML body instead
 	};
